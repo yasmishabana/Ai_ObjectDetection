@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
-import 'package:flutter/widgets.dart';
 import 'package:tflite_v2/tflite_v2.dart';
 
 void main() async {
@@ -139,7 +138,7 @@ class _RealTimeObjectDetectionState extends State<RealTimeObjectDetection> {
     }
     return Scaffold(
       appBar: AppBar(
-        title: Text('Real-time Object Detection'),
+        title: const Text('Real-time Object Detection'),
       ),
       body: Column(
         // mainAxisAlignment: MainAxisAlignment.center,
@@ -169,7 +168,7 @@ class _RealTimeObjectDetectionState extends State<RealTimeObjectDetection> {
                   onPressed: () {
                     toggleCamera();
                   },
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.camera_front,
                     size: 30,
                   ))
